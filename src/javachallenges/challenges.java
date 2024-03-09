@@ -39,7 +39,16 @@ public class challenges {
 		    } 
 		    return result;
 		  }
-	
+		
+		//Your code must return true or false (not 'true' and 'false') depending upon whether the given number is a Narcissistic number in base 10.
+		public static boolean isNarcissistic(int number) {
+	        char[] c = String.valueOf(number).toCharArray();
+	        int nar = 0;
+	        for (int i = 0; i < c.length; i++) {
+	            nar += Math.pow((c[i] - '0'),(c.length));
+	        }
+	        return (nar == number);
+	    }
 	
 	public static void main(String[] args) {
 		

@@ -15,6 +15,32 @@ public class challenges {
 	    return x1 * y2 == y1 * x2;
 	  }
 	
+	//Finds the range between letters.
+		public static String gimmeTheLetters(String s){
+		    char[] alpha = ("abcdefghijklmnopqrstuvwxyz").toCharArray();
+		    System.out.println(alpha.toString());
+		    char[] ALPHA = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".toCharArray();
+		    char[] range = s.toCharArray();
+		    char start = range[0];
+		    char end = range[2];
+		    String result = "";
+		    
+		    for (int i = 0; i < 26; i++) {
+		      if (start == end) {
+		        result = result + start;
+		        break;
+		      } else if (start == alpha[i]) {
+		        result += alpha[i];
+		        start = alpha[i+1];
+		      } else if (start == ALPHA[i]) {
+		        result += ALPHA[i];
+		        start = ALPHA[i+1];
+		      }
+		    } 
+		    return result;
+		  }
+	
+	
 	public static void main(String[] args) {
 		
 	}

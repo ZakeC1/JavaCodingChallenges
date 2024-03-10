@@ -57,7 +57,7 @@ public class challenges {
         return (nar == number);
     }
 		
-	//Converts a stream of words into a sentence
+	//Converts a stream of words into a sentence.
 	public static String smash(String... words) {
 	    if (words.length == 0) {
 	    	return "";
@@ -67,6 +67,17 @@ public class challenges {
 	    	sentence += " " + words[i];
 	    }
 	    return sentence;
+	}
+	
+	//Checker whether number is a Square Number.
+	public class Square {    
+	    public static boolean isSquare(int n) {        
+	    	if (n < 0) {
+	    		return false;
+	    	} else{
+	    		return (Math.pow(((int) Math.sqrt(n)),2) == n);
+	    	}
+	    }
 	}
 	
 	public static void main(String[] args) {

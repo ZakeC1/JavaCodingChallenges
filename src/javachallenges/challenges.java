@@ -81,19 +81,13 @@ public class challenges {
 	}
 	
 	//Checks if a sentence is a Pangram. Contains every letter in the alphabet.
-	public class PangramChecker {
-		public boolean check(String sentence){
-			boolean bool = true;
-			char[] alpha = ("abcdefghijklmnopqrstuvwxyz").toCharArray();
-			char[] ALPHA = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".toCharArray();
-			for (int i = 0; i<26; i++){
-				if (bool == false){
-					break;
-				}
-				bool = bool && (sentence.contains(Character.toString(alpha[i])) || sentence.contains(Character.toString(ALPHA[i])));
+	public boolean check(String sentence){
+		for (char c = 'a'; c<='z'; c++){
+			if (!(sentence.toLowerCase().contains("" + c))){
+				return false;
 			}
-			return bool;
 		}
+		return true;
 	}
 	
 	public static void main(String[] args) {

@@ -90,7 +90,9 @@ public class challenges {
 		return true;
 	}
 	
-	//Counts the amount of distinct case-insensitive alphabetic characters and numeric digits that occur more than once in the input string
+	//Counts the amount of distinct case-insensitive alphabetic characters and numeric 
+	//digits that occur more than once in the input string.
+	
 	public static int duplicateCount(String text) {
 		int count = 0;
 	    text = text.toLowerCase();

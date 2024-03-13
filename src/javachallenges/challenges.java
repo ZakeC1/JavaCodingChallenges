@@ -92,10 +92,18 @@ public class challenges {
 	
 	//Counts the amount of distinct case-insensitive alphabetic characters and numeric digits that occur more than once in the input string
 	public static int duplicateCount(String text) {
-	    
-		
-		return 0;
-	  }
+		int count = 0;
+	    text = text.toLowerCase();
+	    while (text != "") {
+	    	String c = Character.toString(text.charAt(0));
+	    	if (text.length() - (text.replace(c, "")).length() > 1){
+	    		count += 1;
+	    		text = text.replace(c, "");
+	    	}
+	      text = text.replace(c, "");
+	    }
+	    return count;
+	}
 	
 	
 	public static void main(String[] args) {

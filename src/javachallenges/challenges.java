@@ -110,7 +110,19 @@ public class challenges {
 	//Create a function taking a positive integer between 1 and 3999 (both included) as 
 	//its parameter and returning a string containing the Roman Numeral representation of that integer.
 	
-	
+	public class Conversion {
+
+	    public String solution(int n) {
+	        int val = n;
+	        String romnum = "";
+	        romnum += "M".repeat(val / 1000);
+	        val = val - (val / 1000)*1000;
+	        //romnum += "M"*(val % 100);
+	        //romnum += "M"*(val % 10);
+	        romnum += "I".repeat(val);
+	        return romnum;
+	    }
+	}
 	
 	public static void main(String[] args) {
 		

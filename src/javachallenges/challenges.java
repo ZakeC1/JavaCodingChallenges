@@ -128,7 +128,26 @@ public class challenges {
 	
 	//Greed Dice Game
 	
-	
+	public static int greedy(int[] dice){
+        int score = 0;
+        int[] count = {0, 0, 0, 0, 0, 0};
+        for (int i = 0; i < 5; i++) {
+            count[dice[i]-1] += 1;
+        }
+        if (count[0] >= 3) {
+            score += 1000;
+            count[0] = count[0] - 3;
+        }
+        for (int i = 1; i < 6; i++) {
+            if (count[i] >= 3) {
+                score += (i+1)*100;
+                count[i] = count[i]-3;
+            }
+        }
+        score += count[4]*50;
+        score += count[0]*100;
+        return score;
+    }
 	public static void main(String[] args) {
 		
 	}

@@ -151,7 +151,20 @@ public class challenges {
 	
 	//Define a function that takes an integer argument and returns a logical value true or false depending 
 	//on if the integer is a prime.
-	
+	public static boolean isPrime(int num) {
+	    
+	    if (num <= 1) {
+	    	return false;
+	    }
+	    
+	    for (int i = 2; i <= num / 2; i++) {
+	    	if (num % i == 0) {
+	    		return false;   
+	    	}
+	    }
+	    
+	    return true;
+	  }
 	
 	public static void main(String[] args) {
 		

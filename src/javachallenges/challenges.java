@@ -164,7 +164,12 @@ public class challenges {
 	    }
 	    
 	    return true;
-	  }
+	}
+	
+	//Define a function that outputs a mirrored pyramid of stars
+	public static void stars() {
+		
+	}
 	
 	public static void main(String[] args) {
 		

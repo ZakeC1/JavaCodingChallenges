@@ -69,16 +69,15 @@ public class challenges {
 	    return sentence;
 	}
 	
-	//Checker whether number is a Square Number.
-	public class Square {    
-	    public static boolean isSquare(int n) {        
-	    	if (n < 0) {
-	    		return false;
-	    	} else{
-	    		return (Math.pow(((int) Math.sqrt(n)),2) == n);
-	    	}
-	    }
-	}
+	//Checker whether number is a Square Number.   
+	public static boolean isSquare(int n) {        
+	    if (n < 0) {
+	   		return false;
+	   	} else{
+	   		return (Math.pow(((int) Math.sqrt(n)),2) == n);
+	   	}
+    }
+	
 	
 	//Checks if a sentence is a Pangram. Contains every letter in the alphabet.
 	public boolean check(String sentence){

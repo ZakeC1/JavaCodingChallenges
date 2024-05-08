@@ -182,7 +182,17 @@ public class challenges {
 	
 	//Write an algorithm to sort and return an array in ascending order.
 	public static int[] sort(int[] nums) {
-		return null;
+		int temp = 0;
+		for (int i = 0; i < nums.length; i++) {
+			for (int j = i+1; j < nums.length; j++) {
+				if (nums[i] > nums[j]) {
+					temp = nums[i];
+					nums[i] = nums[j];
+					nums[j] = temp;
+				}
+			}
+		}
+		return nums;
 	}
 	
 	public static void main(String[] args) {

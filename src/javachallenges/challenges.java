@@ -180,6 +180,11 @@ public class challenges {
 		}
 	}
 	
+	//Write an algorithm to sort and return an array in ascending order.
+	public static int[] sort(int[] nums) {
+		return null;
+	}
+	
 	public static void main(String[] args) {
 		
 	}

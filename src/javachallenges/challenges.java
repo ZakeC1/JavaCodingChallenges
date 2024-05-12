@@ -194,6 +194,11 @@ public class challenges {
 		return nums;
 	}
 	
+	//Write an algorithm that takes in a number and returns the next prime number.
+	public static int nextPrime(int num) {
+
+	}
+	
 	public static void main(String[] args) {
 		
 	}

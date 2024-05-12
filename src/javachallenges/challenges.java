@@ -196,7 +196,18 @@ public class challenges {
 	
 	//Write an algorithm that takes in a number and returns the next prime number.
 	public static int nextPrime(int num) {
-
+		int prime = num;
+		if ((num % 2) == 0) {
+			prime += 1;
+		} else {
+			prime += 2;
+		}
+		
+		while (!isPrime(prime)) {
+			prime += 2;
+		}
+		
+		return prime;
 	}
 	
 	public static void main(String[] args) {

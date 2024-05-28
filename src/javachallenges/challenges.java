@@ -213,8 +213,16 @@ public class challenges {
 	//Given 3 int values, a b c, return their sum. 
 	//However, if one of the values is 13 then it does not count towards the sum and values to its right do not count. 
 	public static int luckySum(int a, int b, int c) {
-		
-		return 0;
+		int[] nums = {a, b, c};
+		int sum = 0;
+		for (int i = 0; i < 3; i++) {
+			if (nums[i] == 13) {
+				break;
+			} else {
+				sum += nums[i];
+			}
+		}
+		return sum;
 	}
 	
 	public static void main(String[] args) {

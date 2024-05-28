@@ -210,6 +210,13 @@ public class challenges {
 		return prime;
 	}
 	
+	//Given 3 int values, a b c, return their sum. 
+	//However, if one of the values is 13 then it does not count towards the sum and values to its right do not count. 
+	public static int luckySum(int a, int b, int c) {
+		
+		return 0;
+	}
+	
 	public static void main(String[] args) {
 		
 	}
